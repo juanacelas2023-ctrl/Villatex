@@ -5,12 +5,12 @@ body {
     padding: 0;
     color: #444;
     line-height: 1.6;
-    background-color: #fdfdfd; /* Blanco con un toque muy suave de fondo */
+    background-color: #ffffff; /* Blanco con un toque muy suave de fondo */
 }
 
 /* Encabezado - Azul Cielo */
 header {
-    background-color: #87CEEB; /* Azul Cielo (SkyBlue) */
+    background-color: #7dbebe; /* Azul Cielo (SkyBlue) */
     color: white;
     padding: 1.2rem 2rem;
     display: flex;
@@ -54,7 +54,7 @@ header nav a:hover {
     text-align: center;
     margin-bottom: 2.5rem;
     font-size: 2rem;
-    color: #87CEEB; /* Azul Cielo para los títulos */
+    color: #7dbebe; /* Azul Cielo para los títulos */
 }
 
 .bg-claro {
@@ -70,12 +70,12 @@ header nav a:hover {
 
 /* Tarjeta de Producto */
 .tarjeta-producto {
-    border: 2px solid #f0f0f0;
+    border: 2px solid #657196;
     border-radius: 15px;
     padding: 20px;
     text-align: center;
     transition: all 0.4s ease;
-    background: white;
+    background: rgba(224, 201, 169, 0.783);
 }
 
 .tarjeta-producto:hover {
@@ -95,12 +95,35 @@ header nav a:hover {
 .tarjeta-producto h3 {
     color: #333;
     margin: 10px 0;
+    /* ---sección de colores--- */
+    .grid-productos .tarjeta-producto .opciones-de-colores {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+    .circulo-de-color {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        border: 2px solid #657196; /* usanso el mismo color del borde de la tarjeta para mantener la coherencia */
+        cursor: pointer;
+        transition: transform 0.3s ease;
+        display: inline-block;
+    }
+    .circulo-de-color:hover {
+        transform: scale(1.3);
+    }
+    /* Colores específicos para cada círculo */
+    .circulo-de-color.blanco { background-color: #ffffff; }
+    .circulo-de-color.beige { background-color: #f5f5dc; }
+    .circulo-de-color.negro { background-color: #000000; }
 }
 
 /* Botón "Consultar Precio" - Rosa Pastel */
 .btn-cotizar {
     display: block;
-    background-color: #FFB6C1; /* Rosa Pastel (LightPink) */
+    background-color: #657196; /* Rosa Pastel (LightPink) */
     color: white;
     padding: 12px;
     text-decoration: none;
